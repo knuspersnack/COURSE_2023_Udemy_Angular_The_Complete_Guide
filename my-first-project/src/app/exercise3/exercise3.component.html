@@ -1,0 +1,5 @@
+<button (click)="showPW()" class="btn btn-secondary">Display Details</button>
+<span *ngIf="pw"> -> Secret Password=tuna</span>
+<p *ngFor="let logItems of logItems; let i = index">
+    <span [ngStyle]="{backgroundColor:getBgColor(i)}" [ngClass]="getClass(i)">{{logItems}}</span>
+</p>
