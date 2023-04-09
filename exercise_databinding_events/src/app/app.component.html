@@ -13,5 +13,11 @@
         <li>Style the element (e.g. paragraph) holding your output text differently in both components</li>
       </ol>
     </div>
+    <div class="col-xs-12">
+      <hr>
+      <app-game-control (counterRunning)="onReceiveCounter($event)"></app-game-control>
+      <app-even *ngFor="let even of evenList" [element]="even"></app-even>
+      <app-odd *ngFor="let odd of oddList" [element]="odd"></app-odd>
+    </div>
   </div>
 </div>
