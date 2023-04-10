@@ -11,5 +11,9 @@ import { Ingredient } from 'src/app/shared/ingredient.model';
       new Ingredient('Apples',5),
       new Ingredient('Tomatos',10),
     ];
+
+    onIngredientAdded(ingredient: Ingredient) {
+      this.ingredients.push(ingredient);
+    }
   }
-  
+   
